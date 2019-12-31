@@ -4,6 +4,7 @@ import (
 	"github.com/liangdas/mqant"
 	"github.com/liangdas/mqant/module/modules"
 	"github.com/nats-io/nats.go"
+	"mqantserver/server/gate"
 
 	//"github.com/liangdas/mqant-modules/tracing"
 	"fmt"
@@ -38,7 +39,7 @@ func main() {
 		module.Nats(nc),
 		module.Registry(rs),
 	)
-	app.Options().Selector.Init(selector.SetStrategy(func(services []*registry.Service) selector.Next {
+	/*app.Options().Selector.Init(selector.SetStrategy(func(services []*registry.Service) selector.Next {
 		var nodes []*registry.Node
 
 		// Filter the nodes for datacenter
@@ -62,7 +63,7 @@ func main() {
 			index := rand.Intn(int(len(nodes)))
 			return nodes[index], nil
 		}
-	}))
+	}))*/
 	//app.Route("Chat",ChatRoute)
 	app.Run( //只有是在调试模式下才会在控制台打印日志, 非调试模式下只在日志文件中输出日志
 		modules.MasterModule(),
