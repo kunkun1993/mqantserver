@@ -4,7 +4,7 @@ import (
 	"github.com/liangdas/mqant"
 	"github.com/liangdas/mqant/module/modules"
 	"github.com/nats-io/nats.go"
-	"mqantserver/server/gate"
+	//"mqantserver/server/gate"
 
 	//"github.com/liangdas/mqant-modules/tracing"
 	//"fmt"
