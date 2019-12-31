@@ -7,7 +7,7 @@ import (
 	"mqantserver/server/gate"
 
 	//"github.com/liangdas/mqant-modules/tracing"
-	"fmt"
+	//"fmt"
 	"github.com/liangdas/mqant/module"
 	"github.com/liangdas/mqant/registry"
 	"github.com/liangdas/mqant/selector"
@@ -19,10 +19,10 @@ import (
 	"github.com/liangdas/mqantserver/server/user"
 	"github.com/liangdas/mqantserver/server/xaxb"
 	"github.com/liangdas/mqantserver/webapp"
-	"math/rand"
+	//"math/rand"
 	"net/http"
 	_ "net/http/pprof"
-	"sync"
+	//"sync"
 )
 
 func main() {
