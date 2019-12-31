@@ -85,7 +85,7 @@
                             "Id":"Webapp001",
                             "ProcessID":"development",
                             "Settings":{
-                                "StaticPath":"/work/go/mqantserver/bin"
+                                "StaticPath":"/root/go/src/mqantserver/bin"
                             }
                         }
                 ],
